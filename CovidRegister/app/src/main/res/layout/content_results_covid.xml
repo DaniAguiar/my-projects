@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome: "
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="202dp"
+        android:layout_above="@+id/textView3"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPF:"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="252dp"
+        android:layout_above="@+id/textView4"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="442dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_above="@+id/spinner"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="17dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/spinner"
+            android:layout_marginLeft="160dp"
+            android:layout_marginBottom="10dp"
+            android:text="Sim"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="349dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/radioButton"
+            android:text="Não"
+            tools:layout_editor_absoluteX="204dp"
+
+            tools:layout_editor_absoluteY="349dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="186dp"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_above="@+id/textView3"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:id="@+id/editCPF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="233dp"
+        android:layout_toRightOf="@id/textView3"
+        android:layout_above="@+id/textView4"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foi diagnosticado com COVID-19 ?"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="318dp"
+        android:layout_above="@+id/radioGroup"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione sua cidade abaixo"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginLeft="10pt"/>
+
+    <Button
+        android:id="@+id/buttonSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_below="@id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/buttonResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSalvar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Mostrar Resultados" />
+</RelativeLayout>
