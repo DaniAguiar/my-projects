@@ -1,0 +1,28 @@
+#spring:
+#  application:
+#    name: note-generator
+#  kafka:
+#    bootstrap-servers: localhost:9092
+#    properties:
+#      schema:
+#        registry:
+#          url: http://localhost:8081
+#      specific:
+#        avro:
+#          reader: true
+#    cloud:
+#      stream:
+#        bindings:
+#          purchase-created-input:
+#            destination: streaming.sales
+#            binder: kafka
+#            group: ${spring.application.name}
+#        kafka:
+#          binder:
+#            configuration:
+#              value:
+#                deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+#                serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+#              key:
+#                deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#                serializer: org.apache.kafka.common.serialization.StringSerializer

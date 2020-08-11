@@ -1,0 +1,44 @@
+{
+  "type": "record",
+  "name": "PurchaseCreated",
+  "namespace": "com.invillia.poc.sales",
+  "doc": "Evento persistencia de nota fiscal",
+  "fields": [
+    {
+      "name": "id",
+      "type": "int",
+      "doc": "ID da compra"
+    },
+    {
+      "name": "idProduct",
+      "type": "int",
+      "doc": "ID do produto"
+    },
+    {
+      "name": "idAdditionalProduct",
+      "type": "int",
+      "doc": "ID do produto adicional"
+    },
+    {
+      "name": "price",
+      "type": "long",
+      "doc": "Valor da compra"
+    },
+    {
+      "name": "createdAt",
+      "type":{
+         "type":"string",
+         "avro.java.string":"String"
+      },
+      "doc": "Data realizada da compra"
+    },
+    {
+      "name": "updatedAt",
+      "type":{
+         "type":"string",
+         "avro.java.string":"String"
+      },
+      "doc": "Data de atualizacao da compra"
+    }
+  ]
+}
