@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Diagnosticando.iml" filepath="$PROJECT_DIR$/.idea/modules/Diagnosticando.iml" group="Diagnosticando" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Diagnosticando/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Diagnosticando.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Diagnosticando.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Disgnosticando-tcc.Diagnosticando.iml" filepath="$PROJECT_DIR$/.idea/modules/Disgnosticando-tcc.Diagnosticando.iml" />
     </modules>
   </component>
 </project>

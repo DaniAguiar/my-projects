@@ -9,11 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".screens.Appointment"></activity>
-        <activity android:name=".screens.ChooseProfile" />
-        <activity android:name=".screens.Profiles" />
-        <activity android:name=".screens.Register" />
-        <activity android:name=".screens.Principal">
+        <activity android:name=".screens.questions.ListQuestions"></activity>
+        <activity android:name=".screens.questions.CreateQuestions" />
+        <activity android:name=".screens.questions.Questions" />
+        <activity android:name=".screens.DiagnosisResult" />
+        <activity android:name=".screens.principal.Appointment" />
+        <activity android:name=".screens.principal.ChooseProfile" />
+        <activity android:name=".screens.principal.Profiles" />
+        <activity android:name=".screens.principal.Register" />
+        <activity android:name=".screens.principal.Principal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

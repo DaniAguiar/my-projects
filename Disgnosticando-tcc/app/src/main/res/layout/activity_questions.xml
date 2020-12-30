@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.questions.Questions">
+
+    <Button
+        android:id="@+id/buttonQuestionsCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criar novas Perguntas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/buttonQuestionsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar Perguntas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/buttonQuestionStandard" />
+
+    <Button
+        android:id="@+id/buttonQuestionStandard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar questões iniciais"
+        android:layout_below="@id/buttonQuestionsCreate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>

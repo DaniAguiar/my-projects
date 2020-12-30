@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.principal.ChooseProfile">
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Como deseja iniciar a Consulta?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"/>
+
+    <Button
+        android:id="@+id/buttonChooseProfileRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar perfil"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/buttonChooseProfile"
+        android:layout_marginBottom="35dp"/>
+
+    <Button
+        android:id="@+id/buttonChooseProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar com perfil cadastrado"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/buttonStartWithoutRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar consulta sem cadastro"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonChooseProfile"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/textViewPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olá!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:layout_alignLeft="@+id/textViewDescription" />
+
+</RelativeLayout>
